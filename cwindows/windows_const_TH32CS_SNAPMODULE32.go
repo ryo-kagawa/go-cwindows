@@ -1,0 +1,3 @@
+package cwindows
+
+const TH32CS_SNAPMODULE32 TH32CS = 0x00000010

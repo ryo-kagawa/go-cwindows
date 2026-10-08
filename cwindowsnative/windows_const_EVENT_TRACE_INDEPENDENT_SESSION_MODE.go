@@ -1,0 +1,3 @@
+package cwindowsnative
+
+const EVENT_TRACE_INDEPENDENT_SESSION_MODE = 0x08000000

@@ -1,0 +1,8 @@
+package cwindows
+
+type EVENT_FILTER_DESCRIPTOR struct {
+	Ptr  ULONGLONG
+	Size ULONG
+	Type EventFilterType
+}
+type PEVENT_FILTER_DESCRIPTOR *EVENT_FILTER_DESCRIPTOR

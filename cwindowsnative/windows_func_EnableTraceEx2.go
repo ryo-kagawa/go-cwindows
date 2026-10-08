@@ -1,0 +1,25 @@
+package cwindowsnative
+
+import (
+	"unsafe"
+
+	enabletraceex2 "github.com/ryo-kagawa/go-cwindows/dll/sechost/EnableTraceEx2"
+)
+
+func InitSechostEnableTraceEx2() {
+	enabletraceex2.InitSechostEnableTraceEx2()
+}
+
+func EnableTraceEx2(TraceId CONTROLTRACE_ID, ProviderId LPCGUID, ControlCode ULONG, Level UCHAR, MatchAnyKeyword ULONGLONG, MatchAllKeyword ULONGLONG, Timeout ULONG, EnableParameters PENABLE_TRACE_PARAMETERS) ULONG {
+	r1 := enabletraceex2.EnableTraceEx2(
+		uintptr(TraceId),
+		uintptr(unsafe.Pointer(ProviderId)),
+		uintptr(ControlCode),
+		uintptr(Level),
+		uintptr(MatchAnyKeyword),
+		uintptr(MatchAllKeyword),
+		uintptr(Timeout),
+		uintptr(unsafe.Pointer(EnableParameters)),
+	)
+	return ULONG(r1)
+}

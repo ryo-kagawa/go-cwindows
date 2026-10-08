@@ -1,0 +1,14 @@
+package cwindowsnative
+
+import closehandle "github.com/ryo-kagawa/go-cwindows/dll/kernel32/CloseHandle"
+
+func InitKernel32CloseHandle() {
+	closehandle.InitKernel32CloseHandle()
+}
+
+func CloseHandle(hObject HANDLE) (BOOL, error) {
+	r1, lastErr := closehandle.CloseHandle(
+		uintptr(hObject),
+	)
+	return BOOL(r1), lastErr
+}
