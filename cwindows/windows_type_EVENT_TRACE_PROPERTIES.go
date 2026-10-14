@@ -1,3 +1,5 @@
+// Code generated DO NOT EDIT
+
 package cwindows
 
 type EVENT_TRACE_PROPERTIES struct {
@@ -20,4 +22,3 @@ type EVENT_TRACE_PROPERTIES struct {
 	LogFileNameOffset   ULONG
 	LoggerNameOffset    ULONG
 }
-type PEVENT_TRACE_PROPERTIES *EVENT_TRACE_PROPERTIES

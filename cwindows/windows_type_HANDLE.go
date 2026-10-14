@@ -1,5 +1,5 @@
-package cwindows
+// Code generated DO NOT EDIT
 
-const INVALID_HANDLE_VALUE = ^HANDLE(0)
+package cwindows
 
 type HANDLE uintptr

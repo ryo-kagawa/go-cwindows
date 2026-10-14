@@ -1,0 +1,5 @@
+// Code generated DO NOT EDIT
+
+package cwindows
+
+const ETW_PROCESS_TRACE_MODE_RAW_TIMESTAMP ETW_PROCESS_TRACE_MODES = 0x00000001

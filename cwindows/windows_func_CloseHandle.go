@@ -1,8 +1,8 @@
+// Code generated DO NOT EDIT
+
 package cwindows
 
-import (
-	closehandle "github.com/ryo-kagawa/go-cwindows/dll/kernel32/CloseHandle"
-)
+import closehandle "github.com/ryo-kagawa/go-cwindows/dll/kernel32/CloseHandle"
 
 func InitKernel32CloseHandle() {
 	closehandle.InitKernel32CloseHandle()

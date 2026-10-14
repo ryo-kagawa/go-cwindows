@@ -1,6 +1,8 @@
+// Code generated DO NOT EDIT
+
 package process32next
 
-import "github.com/ryo-kagawa/go-cwindows/dll/kernel32"
+import kernel32 "github.com/ryo-kagawa/go-cwindows/dll/kernel32"
 
 var impl = func(hSnapshot uintptr, lppe uintptr) (uintptr, error) {
 	panic("Process32Next not initialized. Call InitKernel32Process32Next() first.")

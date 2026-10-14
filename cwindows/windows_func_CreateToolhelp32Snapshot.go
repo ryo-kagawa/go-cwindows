@@ -1,8 +1,8 @@
+// Code generated DO NOT EDIT
+
 package cwindows
 
-import (
-	createtoolhelp32snapshot "github.com/ryo-kagawa/go-cwindows/dll/kernel32/CreateToolhelp32Snapshot"
-)
+import createtoolhelp32snapshot "github.com/ryo-kagawa/go-cwindows/dll/kernel32/CreateToolhelp32Snapshot"
 
 func InitKernel32CreateToolhelp32Snapshot() {
 	createtoolhelp32snapshot.InitKernel32CreateToolhelp32Snapshot()

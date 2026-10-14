@@ -1,3 +1,5 @@
+// Code generated DO NOT EDIT
+
 package cwindowsnative
 
 import closehandle "github.com/ryo-kagawa/go-cwindows/dll/kernel32/CloseHandle"

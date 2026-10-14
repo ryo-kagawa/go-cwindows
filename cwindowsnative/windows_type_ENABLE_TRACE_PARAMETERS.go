@@ -1,3 +1,5 @@
+// Code generated DO NOT EDIT
+
 package cwindowsnative
 
 type ENABLE_TRACE_PARAMETERS struct {
@@ -8,4 +10,3 @@ type ENABLE_TRACE_PARAMETERS struct {
 	EnableFilterDesc PEVENT_FILTER_DESCRIPTOR
 	FilterDescCount  ULONG
 }
-type PENABLE_TRACE_PARAMETERS *ENABLE_TRACE_PARAMETERS

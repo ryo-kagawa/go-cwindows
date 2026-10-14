@@ -1,3 +1,5 @@
+// Code generated DO NOT EDIT
+
 package cwindows
 
 type GUID struct {
@@ -6,4 +8,3 @@ type GUID struct {
 	Data3 uint16
 	Data4 [8]byte
 }
-type LPCGUID *GUID

@@ -1,3 +1,5 @@
+// Code generated DO NOT EDIT
+
 package cwindows
 
 import (
@@ -16,7 +18,7 @@ type ETW_OPEN_TRACE_OPTIONS struct {
 
 func (e *ETW_OPEN_TRACE_OPTIONS) SetEventCallback(value PEVENT_RECORD_CALLBACK) {
 	e.EventCallback = windows.NewCallback(func(EventRecord PEVENT_RECORD) uintptr {
-		value((PEVENT_RECORD)(unsafe.Pointer(EventRecord)))
+		value(EventRecord)
 		return 0
 	})
 }

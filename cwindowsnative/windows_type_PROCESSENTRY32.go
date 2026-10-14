@@ -1,3 +1,5 @@
+// Code generated DO NOT EDIT
+
 package cwindowsnative
 
 type PROCESSENTRY32 struct {
@@ -12,4 +14,3 @@ type PROCESSENTRY32 struct {
 	Flags           DWORD
 	ExeFile         [MAX_PATH]WCHAR
 }
-type LPPROCESSENTRY32 *PROCESSENTRY32

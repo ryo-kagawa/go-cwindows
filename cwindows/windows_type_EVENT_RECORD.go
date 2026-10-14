@@ -1,3 +1,5 @@
+// Code generated DO NOT EDIT
+
 package cwindows
 
 type EVENT_RECORD struct {
@@ -9,4 +11,3 @@ type EVENT_RECORD struct {
 	UserData          PVOID
 	UserContext       PVOID
 }
-type PEVENT_RECORD *EVENT_RECORD

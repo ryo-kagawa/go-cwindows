@@ -1,0 +1,27 @@
+// Code generated DO NOT EDIT
+
+package cwindows
+{{- if .Unsafe}}
+
+import (
+	"unsafe"
+
+	{{.FuncPackageName}} "github.com/ryo-kagawa/go-cwindows/dll/{{.DLLModuleName}}/{{.FuncName}}"
+)
+{{- else}}
+
+import {{.FuncPackageName}} "github.com/ryo-kagawa/go-cwindows/dll/{{.DLLModuleName}}/{{.FuncName}}"
+{{- end}}
+
+func Init{{.DLLName}}{{.FuncName}}() {
+	{{.FuncPackageName}}.Init{{.DLLName}}{{.FuncName}}()
+}
+
+func {{.FuncName}}{{if .TypeParameter}}[{{.TypeParameter}}]{{end}}({{range $i, $value := .Parameters}}{{if $i}}, {{end}}{{$value.Name}} {{$value.Type}}{{end}}) {{if .ReturnError}}({{end}}{{if .ReturnType}}{{.ReturnType}}{{end}}{{if .ReturnError}}, error){{end}} {
+	{{if .ReturnType}}r1{{if .ReturnError}}, lastErr{{end}} := {{end}}{{.FuncPackageName}}.{{.FuncName}}(
+		{{- range $i, $value := .Parameters}}
+		uintptr({{if $value.Unsafe}}unsafe.Pointer({{end}}{{$value.Name}}{{if $value.Unsafe}}){{end}}),
+		{{- end}}
+	)
+	{{if .ReturnType}}return {{.ReturnType}}(r1){{if .ReturnError}}, lastErr{{end}}{{end}}
+}

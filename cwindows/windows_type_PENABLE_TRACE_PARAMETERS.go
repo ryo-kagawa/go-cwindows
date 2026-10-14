@@ -1,0 +1,5 @@
+// Code generated DO NOT EDIT
+
+package cwindows
+
+type PENABLE_TRACE_PARAMETERS *ENABLE_TRACE_PARAMETERS

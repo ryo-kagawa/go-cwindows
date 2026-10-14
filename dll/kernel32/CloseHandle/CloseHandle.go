@@ -1,6 +1,8 @@
+// Code generated DO NOT EDIT
+
 package closehandle
 
-import "github.com/ryo-kagawa/go-cwindows/dll/kernel32"
+import kernel32 "github.com/ryo-kagawa/go-cwindows/dll/kernel32"
 
 var impl = func(hObject uintptr) (uintptr, error) {
 	panic("CloseHandle not initialized. Call InitKernel32CloseHandle() first.")

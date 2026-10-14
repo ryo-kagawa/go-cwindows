@@ -1,6 +1,8 @@
+// Code generated DO NOT EDIT
+
 package setprocessaffinitymask
 
-import "github.com/ryo-kagawa/go-cwindows/dll/kernel32"
+import kernel32 "github.com/ryo-kagawa/go-cwindows/dll/kernel32"
 
 var impl = func(hProcess uintptr, dwProcessAffinityMask uintptr) (uintptr, error) {
 	panic("SetProcessAffinityMask not initialized. Call InitKernel32SetProcessAffinityMask() first.")

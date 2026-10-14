@@ -1,6 +1,8 @@
+// Code generated DO NOT EDIT
+
 package createtoolhelp32snapshot
 
-import "github.com/ryo-kagawa/go-cwindows/dll/kernel32"
+import kernel32 "github.com/ryo-kagawa/go-cwindows/dll/kernel32"
 
 var impl = func(dwFlags uintptr, th32ProcessID uintptr) (uintptr, error) {
 	panic("CreateToolhelp32Snapshot not initialized. Call InitKernel32CreateToolhelp32Snapshot() first.")

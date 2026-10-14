@@ -1,3 +1,5 @@
+// Code generated DO NOT EDIT
+
 package cwindows
 
 type EVENT_TRACE_PROPERTIES_V2 struct {
@@ -7,4 +9,3 @@ type EVENT_TRACE_PROPERTIES_V2 struct {
 	FilterDesc      PEVENT_FILTER_DESCRIPTOR
 	DUMMYUNIONNAME3 [8]byte
 }
-type PEVENT_TRACE_PROPERTIES_V2 *EVENT_TRACE_PROPERTIES_V2

@@ -1,3 +1,5 @@
+// Code generated DO NOT EDIT
+
 package cwindowsnative
 
 const INVALID_PROCESSTRACE_HANDLE = PROCESSTRACE_HANDLE(INVALID_HANDLE_VALUE)
