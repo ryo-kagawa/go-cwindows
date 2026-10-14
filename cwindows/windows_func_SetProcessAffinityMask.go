@@ -1,3 +1,5 @@
+// Code generated DO NOT EDIT
+
 package cwindows
 
 import setprocessaffinitymask "github.com/ryo-kagawa/go-cwindows/dll/kernel32/SetProcessAffinityMask"

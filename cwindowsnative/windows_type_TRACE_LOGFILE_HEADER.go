@@ -1,3 +1,5 @@
+// Code generated DO NOT EDIT
+
 package cwindowsnative
 
 type TRACE_LOGFILE_HEADER struct {

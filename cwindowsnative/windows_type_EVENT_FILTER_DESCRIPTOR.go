@@ -1,3 +1,5 @@
+// Code generated DO NOT EDIT
+
 package cwindowsnative
 
 type EVENT_FILTER_DESCRIPTOR struct {
@@ -5,4 +7,3 @@ type EVENT_FILTER_DESCRIPTOR struct {
 	Size ULONG
 	Type ULONG
 }
-type PEVENT_FILTER_DESCRIPTOR *EVENT_FILTER_DESCRIPTOR

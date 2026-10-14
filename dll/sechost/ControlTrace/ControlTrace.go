@@ -1,6 +1,8 @@
+// Code generated DO NOT EDIT
+
 package controltrace
 
-import "github.com/ryo-kagawa/go-cwindows/dll/sechost"
+import sechost "github.com/ryo-kagawa/go-cwindows/dll/sechost"
 
 var impl = func(TraceId uintptr, InstanceName uintptr, Properties uintptr, ControlCode uintptr) uintptr {
 	panic("ControlTrace not initialized. Call InitSechostControlTrace() first.")

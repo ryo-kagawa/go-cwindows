@@ -1,3 +1,5 @@
+// Code generated DO NOT EDIT
+
 package cwindows
 
 func UTF16ToWCHAR(value []uint16) []WCHAR {

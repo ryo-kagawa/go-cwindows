@@ -1,3 +1,5 @@
+// Code generated DO NOT EDIT
+
 package cwindows
 
 type EVENT_HEADER_EXTENDED_DATA_ITEM struct {
@@ -7,4 +9,3 @@ type EVENT_HEADER_EXTENDED_DATA_ITEM struct {
 	DataSize  USHORT
 	DataPtr   ULONGLONG
 }
-type PEVENT_HEADER_EXTENDED_DATA_ITEM *EVENT_HEADER_EXTENDED_DATA_ITEM

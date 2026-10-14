@@ -1,6 +1,8 @@
+// Code generated DO NOT EDIT
+
 package processtrace
 
-import "github.com/ryo-kagawa/go-cwindows/dll/sechost"
+import sechost "github.com/ryo-kagawa/go-cwindows/dll/sechost"
 
 var impl = func(HandleArray uintptr, HandleCount uintptr, StartTime uintptr, EndTime uintptr) uintptr {
 	panic("ProcessTrace not initialized. Call InitSechostProcessTrace() first.")

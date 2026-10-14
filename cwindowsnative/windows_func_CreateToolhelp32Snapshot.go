@@ -1,3 +1,5 @@
+// Code generated DO NOT EDIT
+
 package cwindowsnative
 
 import createtoolhelp32snapshot "github.com/ryo-kagawa/go-cwindows/dll/kernel32/CreateToolhelp32Snapshot"

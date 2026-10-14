@@ -1,6 +1,8 @@
+// Code generated DO NOT EDIT
+
 package starttrace
 
-import "github.com/ryo-kagawa/go-cwindows/dll/sechost"
+import sechost "github.com/ryo-kagawa/go-cwindows/dll/sechost"
 
 var impl = func(TraceId uintptr, InstanceName uintptr, Properties uintptr) uintptr {
 	panic("StartTrace not initialized. Call InitSechostStartTrace() first.")

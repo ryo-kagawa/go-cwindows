@@ -1,3 +1,5 @@
+// Code generated DO NOT EDIT
+
 package cwindows
 
 type TRACE_LOGFILE_HEADER struct {

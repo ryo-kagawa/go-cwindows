@@ -1,6 +1,8 @@
+// Code generated DO NOT EDIT
+
 package openprocess
 
-import "github.com/ryo-kagawa/go-cwindows/dll/kernel32"
+import kernel32 "github.com/ryo-kagawa/go-cwindows/dll/kernel32"
 
 var impl = func(dwDesiredAccess uintptr, bInheritHandle uintptr, dwProcessId uintptr) (uintptr, error) {
 	panic("OpenProcess not initialized. Call InitKernel32OpenProcess() first.")

@@ -1,0 +1,9 @@
+// Code generated DO NOT EDIT
+
+package cwindowsnative
+{{if .Import}}{{.Import}}{{end}}
+type {{.Name}} struct {
+  {{- .Struct -}}
+}
+{{range $i, $value := .Functions}}{{$value}}{{end -}}
+

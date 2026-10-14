@@ -1,6 +1,8 @@
+// Code generated DO NOT EDIT
+
 package opentracefromrealtimelogger
 
-import "github.com/ryo-kagawa/go-cwindows/dll/sechost"
+import sechost "github.com/ryo-kagawa/go-cwindows/dll/sechost"
 
 var impl = func(LoggerName uintptr, Options uintptr, LogFileHeader uintptr) (uintptr, error) {
 	panic("OpenTraceFromRealTimeLogger not initialized. Call InitSechostOpenTraceFromRealTimeLogger() first.")

@@ -1,0 +1,5 @@
+// Code generated DO NOT EDIT
+
+package cwindowsnative
+
+type PEVENT_HEADER_EXTENDED_DATA_ITEM *EVENT_HEADER_EXTENDED_DATA_ITEM

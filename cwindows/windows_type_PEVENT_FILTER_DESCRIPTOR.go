@@ -1,0 +1,5 @@
+// Code generated DO NOT EDIT
+
+package cwindows
+
+type PEVENT_FILTER_DESCRIPTOR *EVENT_FILTER_DESCRIPTOR

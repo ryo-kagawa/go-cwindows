@@ -1,3 +1,5 @@
+// Code generated DO NOT EDIT
+
 package cwindows
 
 import openprocess "github.com/ryo-kagawa/go-cwindows/dll/kernel32/OpenProcess"
