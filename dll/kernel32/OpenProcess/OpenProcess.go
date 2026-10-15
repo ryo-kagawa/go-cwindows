@@ -5,7 +5,7 @@ package openprocess
 import kernel32 "github.com/ryo-kagawa/go-cwindows/dll/kernel32"
 
 var impl = func(dwDesiredAccess uintptr, bInheritHandle uintptr, dwProcessId uintptr) (uintptr, error) {
-	panic("OpenProcess not initialized. Call InitKernel32OpenProcess() first.")
+	panic("Kernel32OpenProcess not initialized. Call InitKernel32OpenProcess() first.")
 }
 
 func InitKernel32OpenProcess() {
@@ -20,7 +20,7 @@ func InitKernel32OpenProcess() {
 	}
 }
 
-func OpenProcess(dwDesiredAccess uintptr, bInheritHandle uintptr, dwProcessId uintptr) (uintptr, error) {
+func Kernel32OpenProcess(dwDesiredAccess uintptr, bInheritHandle uintptr, dwProcessId uintptr) (uintptr, error) {
 	r1, lastErr := impl(
 		dwDesiredAccess,
 		bInheritHandle,

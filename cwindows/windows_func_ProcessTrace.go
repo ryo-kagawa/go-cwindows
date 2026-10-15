@@ -12,7 +12,7 @@ func InitSechostProcessTrace() {
 	processtrace.InitSechostProcessTrace()
 }
 
-func ProcessTrace(HandleArray *PROCESSTRACE_HANDLE, HandleCount ULONG, StartTime LPFILETIME, EndTime LPFILETIME) ULONG {
+func SechostProcessTrace(HandleArray *PROCESSTRACE_HANDLE, HandleCount ULONG, StartTime LPFILETIME, EndTime LPFILETIME) ULONG {
 	r1 := processtrace.ProcessTrace(
 		uintptr(unsafe.Pointer(HandleArray)),
 		uintptr(HandleCount),

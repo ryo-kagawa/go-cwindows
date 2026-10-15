@@ -8,7 +8,7 @@ func InitKernel32SetProcessAffinityMask() {
 	setprocessaffinitymask.InitKernel32SetProcessAffinityMask()
 }
 
-func SetProcessAffinityMask(hProcess HANDLE, dwProcessAffinityMask DWORD_PTR) (BOOL, error) {
+func Kernel32SetProcessAffinityMask(hProcess HANDLE, dwProcessAffinityMask DWORD_PTR) (BOOL, error) {
 	r1, lastErr := setprocessaffinitymask.SetProcessAffinityMask(
 		uintptr(hProcess),
 		uintptr(dwProcessAffinityMask),

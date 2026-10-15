@@ -5,7 +5,7 @@ package starttrace
 import sechost "github.com/ryo-kagawa/go-cwindows/dll/sechost"
 
 var impl = func(TraceId uintptr, InstanceName uintptr, Properties uintptr) uintptr {
-	panic("StartTrace not initialized. Call InitSechostStartTrace() first.")
+	panic("SechostStartTrace not initialized. Call InitSechostStartTrace() first.")
 }
 
 func InitSechostStartTrace() {
@@ -20,7 +20,7 @@ func InitSechostStartTrace() {
 	}
 }
 
-func StartTrace(TraceId uintptr, InstanceName uintptr, Properties uintptr) uintptr {
+func SechostStartTrace(TraceId uintptr, InstanceName uintptr, Properties uintptr) uintptr {
 	r1 := impl(
 		TraceId,
 		InstanceName,

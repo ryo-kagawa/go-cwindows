@@ -5,7 +5,7 @@ package enabletraceex2
 import sechost "github.com/ryo-kagawa/go-cwindows/dll/sechost"
 
 var impl = func(TraceId uintptr, ProviderId uintptr, ControlCode uintptr, Level uintptr, MatchAnyKeyword uintptr, MatchAllKeyword uintptr, Timeout uintptr, EnableParameters uintptr) uintptr {
-	panic("EnableTraceEx2 not initialized. Call InitSechostEnableTraceEx2() first.")
+	panic("SechostEnableTraceEx2 not initialized. Call InitSechostEnableTraceEx2() first.")
 }
 
 func InitSechostEnableTraceEx2() {
@@ -25,7 +25,7 @@ func InitSechostEnableTraceEx2() {
 	}
 }
 
-func EnableTraceEx2(TraceId uintptr, ProviderId uintptr, ControlCode uintptr, Level uintptr, MatchAnyKeyword uintptr, MatchAllKeyword uintptr, Timeout uintptr, EnableParameters uintptr) uintptr {
+func SechostEnableTraceEx2(TraceId uintptr, ProviderId uintptr, ControlCode uintptr, Level uintptr, MatchAnyKeyword uintptr, MatchAllKeyword uintptr, Timeout uintptr, EnableParameters uintptr) uintptr {
 	r1 := impl(
 		TraceId,
 		ProviderId,

@@ -8,7 +8,7 @@ func InitKernel32OpenProcess() {
 	openprocess.InitKernel32OpenProcess()
 }
 
-func OpenProcess(dwDesiredAccess DWORD, bInheritHandle BOOL, dwProcessId DWORD) (HANDLE, error) {
+func Kernel32OpenProcess(dwDesiredAccess DWORD, bInheritHandle BOOL, dwProcessId DWORD) (HANDLE, error) {
 	r1, lastErr := openprocess.OpenProcess(
 		uintptr(dwDesiredAccess),
 		uintptr(bInheritHandle),

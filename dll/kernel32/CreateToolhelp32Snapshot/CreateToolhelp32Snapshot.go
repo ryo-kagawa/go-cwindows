@@ -5,7 +5,7 @@ package createtoolhelp32snapshot
 import kernel32 "github.com/ryo-kagawa/go-cwindows/dll/kernel32"
 
 var impl = func(dwFlags uintptr, th32ProcessID uintptr) (uintptr, error) {
-	panic("CreateToolhelp32Snapshot not initialized. Call InitKernel32CreateToolhelp32Snapshot() first.")
+	panic("Kernel32CreateToolhelp32Snapshot not initialized. Call InitKernel32CreateToolhelp32Snapshot() first.")
 }
 
 func InitKernel32CreateToolhelp32Snapshot() {
@@ -19,7 +19,7 @@ func InitKernel32CreateToolhelp32Snapshot() {
 	}
 }
 
-func CreateToolhelp32Snapshot(dwFlags uintptr, th32ProcessID uintptr) (uintptr, error) {
+func Kernel32CreateToolhelp32Snapshot(dwFlags uintptr, th32ProcessID uintptr) (uintptr, error) {
 	r1, lastErr := impl(
 		dwFlags,
 		th32ProcessID,

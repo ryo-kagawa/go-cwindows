@@ -5,7 +5,7 @@ package processtrace
 import sechost "github.com/ryo-kagawa/go-cwindows/dll/sechost"
 
 var impl = func(HandleArray uintptr, HandleCount uintptr, StartTime uintptr, EndTime uintptr) uintptr {
-	panic("ProcessTrace not initialized. Call InitSechostProcessTrace() first.")
+	panic("SechostProcessTrace not initialized. Call InitSechostProcessTrace() first.")
 }
 
 func InitSechostProcessTrace() {
@@ -21,7 +21,7 @@ func InitSechostProcessTrace() {
 	}
 }
 
-func ProcessTrace(HandleArray uintptr, HandleCount uintptr, StartTime uintptr, EndTime uintptr) uintptr {
+func SechostProcessTrace(HandleArray uintptr, HandleCount uintptr, StartTime uintptr, EndTime uintptr) uintptr {
 	r1 := impl(
 		HandleArray,
 		HandleCount,

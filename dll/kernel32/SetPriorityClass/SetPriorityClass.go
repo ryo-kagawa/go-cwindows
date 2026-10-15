@@ -5,7 +5,7 @@ package setpriorityclass
 import kernel32 "github.com/ryo-kagawa/go-cwindows/dll/kernel32"
 
 var impl = func(hProcess uintptr, dwPriorityClass uintptr) (uintptr, error) {
-	panic("SetPriorityClass not initialized. Call InitKernel32SetPriorityClass() first.")
+	panic("Kernel32SetPriorityClass not initialized. Call InitKernel32SetPriorityClass() first.")
 }
 
 func InitKernel32SetPriorityClass() {
@@ -19,7 +19,7 @@ func InitKernel32SetPriorityClass() {
 	}
 }
 
-func SetPriorityClass(hProcess uintptr, dwPriorityClass uintptr) (uintptr, error) {
+func Kernel32SetPriorityClass(hProcess uintptr, dwPriorityClass uintptr) (uintptr, error) {
 	r1, lastErr := impl(
 		hProcess,
 		dwPriorityClass,
