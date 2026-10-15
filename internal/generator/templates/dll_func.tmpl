@@ -5,7 +5,7 @@ package {{.FuncPackageName}}
 import {{.DLLPackageName}} "github.com/ryo-kagawa/go-cwindows/dll/{{.DLLModuleName}}"
 
 var impl = func({{- range $i, $p := .Parameters -}}{{- if $i }}, {{ end -}}{{$p.Name}} uintptr{{- end -}}) {{if .ReturnError}}({{end}}{{if .Return}}uintptr{{end}}{{if .ReturnError}}, error){{end}} {
-	panic("{{.FuncName}} not initialized. Call Init{{.DLLName}}{{.FuncName}}() first.")
+	panic("{{.DLLName}}{{.FuncName}} not initialized. Call Init{{.DLLName}}{{.FuncName}}() first.")
 }
 
 func Init{{.DLLName}}{{.FuncName}}() {
@@ -20,7 +20,7 @@ func Init{{.DLLName}}{{.FuncName}}() {
 	}
 }
 
-func {{.FuncName}}({{- range $i, $p := .Parameters -}}{{- if $i }}, {{ end -}}{{$p.Name}} uintptr{{- end -}}) {{if .ReturnError}}({{end}}{{if .Return}}uintptr{{end}}{{if .ReturnError}}, error){{end}} {
+func {{.DLLName}}{{.FuncName}}({{- range $i, $p := .Parameters -}}{{- if $i }}, {{ end -}}{{$p.Name}} uintptr{{- end -}}) {{if .ReturnError}}({{end}}{{if .Return}}uintptr{{end}}{{if .ReturnError}}, error){{end}} {
 	{{if .Return}}r1{{if .ReturnError}}, lastErr{{end}} := {{end}}impl(
 		{{- range $i, $p := .Parameters}}
 		{{$p.Name}},

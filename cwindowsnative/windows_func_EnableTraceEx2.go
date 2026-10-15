@@ -12,7 +12,7 @@ func InitSechostEnableTraceEx2() {
 	enabletraceex2.InitSechostEnableTraceEx2()
 }
 
-func EnableTraceEx2(TraceId CONTROLTRACE_ID, ProviderId LPCGUID, ControlCode ULONG, Level UCHAR, MatchAnyKeyword ULONGLONG, MatchAllKeyword ULONGLONG, Timeout ULONG, EnableParameters PENABLE_TRACE_PARAMETERS) ULONG {
+func SechostEnableTraceEx2(TraceId CONTROLTRACE_ID, ProviderId LPCGUID, ControlCode ULONG, Level UCHAR, MatchAnyKeyword ULONGLONG, MatchAllKeyword ULONGLONG, Timeout ULONG, EnableParameters PENABLE_TRACE_PARAMETERS) ULONG {
 	r1 := enabletraceex2.EnableTraceEx2(
 		uintptr(TraceId),
 		uintptr(unsafe.Pointer(ProviderId)),

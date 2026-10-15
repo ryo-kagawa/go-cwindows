@@ -5,7 +5,7 @@ package process32first
 import kernel32 "github.com/ryo-kagawa/go-cwindows/dll/kernel32"
 
 var impl = func(hSnapshot uintptr, lppe uintptr) (uintptr, error) {
-	panic("Process32First not initialized. Call InitKernel32Process32First() first.")
+	panic("Kernel32Process32First not initialized. Call InitKernel32Process32First() first.")
 }
 
 func InitKernel32Process32First() {
@@ -19,7 +19,7 @@ func InitKernel32Process32First() {
 	}
 }
 
-func Process32First(hSnapshot uintptr, lppe uintptr) (uintptr, error) {
+func Kernel32Process32First(hSnapshot uintptr, lppe uintptr) (uintptr, error) {
 	r1, lastErr := impl(
 		hSnapshot,
 		lppe,

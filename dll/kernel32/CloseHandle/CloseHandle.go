@@ -5,7 +5,7 @@ package closehandle
 import kernel32 "github.com/ryo-kagawa/go-cwindows/dll/kernel32"
 
 var impl = func(hObject uintptr) (uintptr, error) {
-	panic("CloseHandle not initialized. Call InitKernel32CloseHandle() first.")
+	panic("Kernel32CloseHandle not initialized. Call InitKernel32CloseHandle() first.")
 }
 
 func InitKernel32CloseHandle() {
@@ -18,7 +18,7 @@ func InitKernel32CloseHandle() {
 	}
 }
 
-func CloseHandle(hObject uintptr) (uintptr, error) {
+func Kernel32CloseHandle(hObject uintptr) (uintptr, error) {
 	r1, lastErr := impl(
 		hObject,
 	)

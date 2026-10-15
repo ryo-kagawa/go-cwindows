@@ -5,7 +5,7 @@ package setprocessaffinitymask
 import kernel32 "github.com/ryo-kagawa/go-cwindows/dll/kernel32"
 
 var impl = func(hProcess uintptr, dwProcessAffinityMask uintptr) (uintptr, error) {
-	panic("SetProcessAffinityMask not initialized. Call InitKernel32SetProcessAffinityMask() first.")
+	panic("Kernel32SetProcessAffinityMask not initialized. Call InitKernel32SetProcessAffinityMask() first.")
 }
 
 func InitKernel32SetProcessAffinityMask() {
@@ -19,7 +19,7 @@ func InitKernel32SetProcessAffinityMask() {
 	}
 }
 
-func SetProcessAffinityMask(hProcess uintptr, dwProcessAffinityMask uintptr) (uintptr, error) {
+func Kernel32SetProcessAffinityMask(hProcess uintptr, dwProcessAffinityMask uintptr) (uintptr, error) {
 	r1, lastErr := impl(
 		hProcess,
 		dwProcessAffinityMask,

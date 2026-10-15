@@ -8,7 +8,7 @@ func InitKernel32CloseHandle() {
 	closehandle.InitKernel32CloseHandle()
 }
 
-func CloseHandle(hObject HANDLE) (BOOL, error) {
+func Kernel32CloseHandle(hObject HANDLE) (BOOL, error) {
 	r1, lastErr := closehandle.CloseHandle(
 		uintptr(hObject),
 	)

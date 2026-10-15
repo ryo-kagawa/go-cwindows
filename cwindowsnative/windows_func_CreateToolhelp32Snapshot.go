@@ -8,7 +8,7 @@ func InitKernel32CreateToolhelp32Snapshot() {
 	createtoolhelp32snapshot.InitKernel32CreateToolhelp32Snapshot()
 }
 
-func CreateToolhelp32Snapshot(dwFlags DWORD, th32ProcessID DWORD) (HANDLE, error) {
+func Kernel32CreateToolhelp32Snapshot(dwFlags DWORD, th32ProcessID DWORD) (HANDLE, error) {
 	r1, lastErr := createtoolhelp32snapshot.CreateToolhelp32Snapshot(
 		uintptr(dwFlags),
 		uintptr(th32ProcessID),
