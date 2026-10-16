@@ -9,7 +9,7 @@ func InitKernel32CreateToolhelp32Snapshot() {
 }
 
 func Kernel32CreateToolhelp32Snapshot(dwFlags TH32CS, th32ProcessID DWORD) (HANDLE, error) {
-	r1, lastErr := createtoolhelp32snapshot.CreateToolhelp32Snapshot(
+	r1, lastErr := createtoolhelp32snapshot.Kernel32CreateToolhelp32Snapshot(
 		uintptr(dwFlags),
 		uintptr(th32ProcessID),
 	)

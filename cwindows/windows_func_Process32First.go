@@ -13,7 +13,7 @@ func InitKernel32Process32First() {
 }
 
 func Kernel32Process32First(hSnapshot HANDLE, lppe LPPROCESSENTRY32) (BOOL, error) {
-	r1, lastErr := process32first.Process32First(
+	r1, lastErr := process32first.Kernel32Process32First(
 		uintptr(hSnapshot),
 		uintptr(unsafe.Pointer(lppe)),
 	)

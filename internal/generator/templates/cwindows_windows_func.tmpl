@@ -18,7 +18,7 @@ func Init{{.DLLName}}{{.FuncName}}() {
 }
 
 func {{.DLLName}}{{.FuncName}}{{if .TypeParameter}}[{{.TypeParameter}}]{{end}}({{range $i, $value := .Parameters}}{{if $i}}, {{end}}{{$value.Name}} {{$value.Type}}{{end}}) {{if .ReturnError}}({{end}}{{if .ReturnType}}{{.ReturnType}}{{end}}{{if .ReturnError}}, error){{end}} {
-	{{if .ReturnType}}r1{{if .ReturnError}}, lastErr{{end}} := {{end}}{{.FuncPackageName}}.{{.FuncName}}(
+	{{if .ReturnType}}r1{{if .ReturnError}}, lastErr{{end}} := {{end}}{{.FuncPackageName}}.{{.DLLName}}{{.FuncName}}(
 		{{- range $i, $value := .Parameters}}
 		uintptr({{if $value.Unsafe}}unsafe.Pointer({{end}}{{$value.Name}}{{if $value.Unsafe}}){{end}}),
 		{{- end}}

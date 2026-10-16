@@ -13,7 +13,7 @@ func InitSechostOpenTraceFromRealTimeLogger() {
 }
 
 func SechostOpenTraceFromRealTimeLogger(LoggerName PCWSTR, Options *ETW_OPEN_TRACE_OPTIONS, LogFileHeader *TRACE_LOGFILE_HEADER) (PROCESSTRACE_HANDLE, error) {
-	r1, lastErr := opentracefromrealtimelogger.OpenTraceFromRealTimeLogger(
+	r1, lastErr := opentracefromrealtimelogger.SechostOpenTraceFromRealTimeLogger(
 		uintptr(unsafe.Pointer(LoggerName)),
 		uintptr(unsafe.Pointer(Options)),
 		uintptr(unsafe.Pointer(LogFileHeader)),

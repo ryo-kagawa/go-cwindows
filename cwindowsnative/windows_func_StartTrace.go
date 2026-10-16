@@ -13,7 +13,7 @@ func InitSechostStartTrace() {
 }
 
 func SechostStartTrace[TProperties PEVENT_TRACE_PROPERTIES | PEVENT_TRACE_PROPERTIES_V2](TraceId *CONTROLTRACE_ID, InstanceName LPCWSTR, Properties TProperties) ULONG {
-	r1 := starttrace.StartTrace(
+	r1 := starttrace.SechostStartTrace(
 		uintptr(unsafe.Pointer(TraceId)),
 		uintptr(unsafe.Pointer(InstanceName)),
 		uintptr(unsafe.Pointer(Properties)),

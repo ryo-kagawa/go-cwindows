@@ -13,7 +13,7 @@ func InitKernel32Process32Next() {
 }
 
 func Kernel32Process32Next(hSnapshot HANDLE, lppe LPPROCESSENTRY32) (BOOL, error) {
-	r1, lastErr := process32next.Process32Next(
+	r1, lastErr := process32next.Kernel32Process32Next(
 		uintptr(hSnapshot),
 		uintptr(unsafe.Pointer(lppe)),
 	)
