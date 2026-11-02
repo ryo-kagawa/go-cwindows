@@ -277,8 +277,9 @@ var WindowsFuncs = map[string]WindowsFunc{
 				Type: "HANDLE",
 			},
 			{
-				Name: "dwPriorityClass",
-				Type: "DWORD",
+				Name:       "dwPriorityClass",
+				Type:       "DWORD",
+				CustomType: "PriorityClass",
 			},
 		},
 		ReturnType:  "BOOL",

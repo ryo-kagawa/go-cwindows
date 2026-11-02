@@ -24,8 +24,18 @@ type WindowsConst struct {
 
 var WindowsConsts = []WindowsConst{
 	{
+		Name:       "ABOVE_NORMAL_PRIORITY_CLASS",
+		CustomType: "PriorityClass",
+		Value:      "0x00008000",
+	},
+	{
 		Name:  "ANYSIZE_ARRAY",
 		Value: "1",
+	},
+	{
+		Name:       "BELOW_NORMAL_PRIORITY_CLASS",
+		CustomType: "PriorityClass",
+		Value:      "0x00004000",
 	},
 	{
 		Name:       "ENABLE_TRACE_PARAMETERS_VERSION",
@@ -403,6 +413,16 @@ var WindowsConsts = []WindowsConst{
 		Value:      "0",
 	},
 	{
+		Name:       "HIGH_PRIORITY_CLASS",
+		CustomType: "PriorityClass",
+		Value:      "0x00000080",
+	},
+	{
+		Name:       "IDLE_PRIORITY_CLASS",
+		CustomType: "PriorityClass",
+		Value:      "0x00000040",
+	},
+	{
 		Name:  "INVALID_HANDLE_VALUE",
 		Value: "^HANDLE(0)",
 	},
@@ -415,9 +435,24 @@ var WindowsConsts = []WindowsConst{
 		Value: "260",
 	},
 	{
+		Name:       "NORMAL_PRIORITY_CLASS",
+		CustomType: "PriorityClass",
+		Value:      "0x00000020",
+	},
+	{
 		Name:       "PROCESS_ALL_ACCESS",
 		CustomType: "ProcessAccess",
 		Value:      "STANDARD_RIGHTS_REQUIRED | SYNCHRONIZE | 0xFFFF",
+	},
+	{
+		Name:       "PROCESS_MODE_BACKGROUND_BEGIN",
+		CustomType: "PriorityClass",
+		Value:      "0x00100000",
+	},
+	{
+		Name:       "PROCESS_MODE_BACKGROUND_END",
+		CustomType: "PriorityClass",
+		Value:      "0x00200000",
 	},
 	{
 		Name:       "PROCESS_CREATE_PROCESS",
@@ -488,6 +523,11 @@ var WindowsConsts = []WindowsConst{
 		Name:       "PROCESS_VM_WRITE",
 		CustomType: "ProcessAccess",
 		Value:      "0x0020",
+	},
+	{
+		Name:       "REALTIME_PRIORITY_CLASS",
+		CustomType: "PriorityClass",
+		Value:      "0x00000100",
 	},
 	{
 		Name:       "SECURITY_CREATOR_SID_AUTHORITY",
