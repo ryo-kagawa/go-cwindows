@@ -2,4 +2,4 @@
 
 package cwindows
 
-const {{.Name}}{{if .Type}} {{.Type}}{{end}} = {{.Value}}
+{{if .IsVar}}var{{else}}const{{end}} {{.Name}}{{if .Type}} {{.Type}}{{end}} = {{.Value}}

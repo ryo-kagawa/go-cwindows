@@ -13,6 +13,7 @@ var cwindowsCustomConstTmpl string
 
 type CustomConst struct {
 	Name  string
+	IsVar bool
 	Type  string
 	Value string
 }
@@ -27,6 +28,16 @@ var CustomConsts = []CustomConst{
 		Name:  "MicrosoftWindowsKernelProcessEventIdProcessStart",
 		Type:  "ProcessEventId",
 		Value: "1",
+	},
+	{
+		Name:  "MicrosoftWindowsKernelProcess",
+		IsVar: true,
+		Value: `GUID{
+	Data1: 0x22fb2cd6,
+	Data2: 0x0e7b,
+	Data3: 0x422b,
+	Data4: [8]byte{0xa0, 0xc7, 0x2f, 0xad, 0x1f, 0xd0, 0xe7, 0x16},
+}`,
 	},
 	{
 		Name:  "MicrosoftWindowsKernelProcessWINEVENT_KEYWORD_PROCESS",
