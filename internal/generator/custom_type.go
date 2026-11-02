@@ -62,6 +62,10 @@ var CustomTypes = []CustomType{
 		BaseType: "ULONG",
 	},
 	{
+		Name:     "PriorityClass",
+		BaseType: "DWORD",
+	},
+	{
 		Name:     "ProcessAccess",
 		BaseType: "DWORD",
 	},

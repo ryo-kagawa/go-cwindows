@@ -8,7 +8,7 @@ func InitKernel32SetPriorityClass() {
 	setpriorityclass.InitKernel32SetPriorityClass()
 }
 
-func Kernel32SetPriorityClass(hProcess HANDLE, dwPriorityClass DWORD) (BOOL, error) {
+func Kernel32SetPriorityClass(hProcess HANDLE, dwPriorityClass PriorityClass) (BOOL, error) {
 	r1, lastErr := setpriorityclass.Kernel32SetPriorityClass(
 		uintptr(hProcess),
 		uintptr(dwPriorityClass),
