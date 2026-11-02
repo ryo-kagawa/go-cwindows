@@ -1,0 +1,10 @@
+// Code generated DO NOT EDIT
+
+package cwindows
+
+var MicrosoftWindowsKernelProcess = GUID{
+	Data1: 0x22fb2cd6,
+	Data2: 0x0e7b,
+	Data3: 0x422b,
+	Data4: [8]byte{0xa0, 0xc7, 0x2f, 0xad, 0x1f, 0xd0, 0xe7, 0x16},
+}
